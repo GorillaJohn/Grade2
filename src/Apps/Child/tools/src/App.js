@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Panel from './Components/Panel';
+import Tools from './Components/Tools'
 
 function App(props) {
   return (
     <div className="App">
-      <Panel store={props.store} />
+      <Tools store={props.store} />
     </div>
   );
 }
