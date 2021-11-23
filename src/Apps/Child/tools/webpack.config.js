@@ -1,17 +1,17 @@
 const path = require('path')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+/*const { CleanWebpackPlugin } = require('clean-webpack-plugin')*/
 
 module.exports = {
-    context: path.resolve(__dirname, 'src'),
     mode: 'production',
+    context: path.resolve(__dirname, 'src'),
     entry: './index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'childApp.js'
+        filename: 'bundle.js'
     },
-    plugins: [
+    /*plugins: [
         new CleanWebpackPlugin()
-    ],
+    ],*/
     module: {
         rules: [
             {
